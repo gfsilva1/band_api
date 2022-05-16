@@ -5,7 +5,7 @@ class BandsController < ApplicationController
   after_action :verify_policy_scoped, only: :index
   # GET /bands
   def index
-    @bands = policy_scope(Band)
+    @bands = policy_scope(Band)s
   end
 
   # GET /bands/1
